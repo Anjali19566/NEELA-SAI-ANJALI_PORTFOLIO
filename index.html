@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neela Sai Anjali | Data Science & ML Portfolio</title>
+    <meta name="description" content="Portfolio of Neela Sai Anjali — Data Science and Software Engineering student specializing in Machine Learning, Python, and Big Data Analytics.">
+    <meta name="keywords" content="Data Science, Machine Learning, Python, Portfolio, Fresher, Big Data Analytics, SRM">
+    <meta name="author" content="Neela Sai Anjali">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Floating Particles Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+    
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#activities" class="nav-link">Activities</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting animate-in">
+                    <span class="greeting-line"></span>Hello, I'm
+                </p>
+                <h1 class="hero-name animate-in delay-1">
+                    Neela Sai<br><span class="name-highlight">Anjali</span>
+                </h1>
+                <div class="hero-role animate-in delay-2">
+                    <span class="role-prefix">I'm a</span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description animate-in delay-3">
+                    Results-driven Data Science & Software Engineering student with a 
+                    <strong>9.74 CGPA</strong>, specializing in Big Data Analytics. Passionate about 
+                    building data-driven, scalable solutions using ML, deep learning, and cloud platforms.
+                </p>
+                <div class="hero-actions animate-in delay-4">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+                <div class="hero-stats animate-in delay-5">
+                    <div class="stat">
+                        <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">ML Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="9.74">0</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Experiences</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate-in delay-2">
+                <div class="hero-avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring ring-2"></div>
+                    <div class="avatar-inner">
+                        <img src="assets/Anjali_photo.png" alt="Anjali's Photo" class="avatar-image">
+                    </div>
+                    <div class="orbit-dot dot-1"></div>
+                    <div class="orbit-dot dot-2"></div>
+                    <div class="orbit-dot dot-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01. Get to Know Me</span>
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a <strong>B.Tech CSE</strong> student specializing in <strong>Big Data Analytics</strong> 
+                        at SRM Institute of Science and Technology, Chennai. With a strong foundation in 
+                        Data Structures & Algorithms, Object-Oriented Programming, and statistical modeling, 
+                        I'm passionate about transforming raw data into meaningful, actionable insights.
+                    </p>
+                    <p>
+                        I have hands-on experience with cloud and database platforms including 
+                        <strong>Google Cloud Platform</strong>, <strong>PostgreSQL</strong>, and <strong>Render</strong>. 
+                        I've built 3+ end-to-end ML projects involving deep learning, predictive modeling, 
+                        and explainable AI. I also led a team to the <strong>Top 25 of 200+ teams</strong> at 
+                        Smart India Hackathon 2024.
+                    </p>
+                    <p>
+                        Currently seeking a <strong>Data Science or Machine Learning internship</strong> 
+                        to deliver data-driven, scalable solutions and grow as a professional in the field.
+                    </p>
+                </div>
+                <div class="about-code-card">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="code-title">anjali.py</span>
+                        </div>
+                        <pre class="code-body"><code><span class="code-keyword">class</span> <span class="code-class">DataScientist</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-string">"Neela Sai Anjali"</span>
+        <span class="code-param">self</span>.role = <span class="code-string">"DS & ML Enthusiast"</span>
+        <span class="code-param">self</span>.languages = [
+            <span class="code-string">"Python"</span>, <span class="code-string">"SQL"</span>,
+            <span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>
+        ]
+        <span class="code-param">self</span>.interests = [
+            <span class="code-string">"Machine Learning"</span>,
+            <span class="code-string">"Deep Learning"</span>,
+            <span class="code-string">"Data Visualization"</span>,
+            <span class="code-string">"Explainable AI"</span>
+        ]
+
+    <span class="code-keyword">def</span> <span class="code-func">say_hi</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">print</span>(<span class="code-string">"Let's build something amazing together!"</span>)</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02. My Toolkit</span>
+                <h2 class="section-title">Skills & <span class="highlight">Technologies</span></h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- CS Fundamentals -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        </div>
+                        <h3>CS Fundamentals</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Structures & Algorithms</span>
+                        <span class="skill-tag">Object-Oriented Programming</span>
+                    </div>
+                </div>
+
+                <!-- ML & AI -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4m0 14v4M4.22 4.22l2.83 2.83m9.9 9.9l2.83 2.83M1 12h4m14 0h4M4.22 19.78l2.83-2.83m9.9-9.9l2.83-2.83"/></svg>
+                        </div>
+                        <h3>ML & AI</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Statistical Modeling</span>
+                        <span class="skill-tag">Predictive Modeling</span>
+                        <span class="skill-tag">EDA</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Recommendation Systems</span>
+                        <span class="skill-tag">Explainable AI (SHAP)</span>
+                        <span class="skill-tag">Counterfactual Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Libraries -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+                        </div>
+                        <h3>Libraries & Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">React</span>
+                    </div>
+                </div>
+
+                <!-- Web & Data Engineering -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <h3>Web & Data Engineering</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Feature Engineering</span>
+                        <span class="skill-tag">Data Cleaning</span>
+                        <span class="skill-tag">Data Transformation</span>
+                        <span class="skill-tag">Data Extraction</span>
+                        <span class="skill-tag">API Development</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & Backend -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                        </div>
+                        <h3>Cloud & Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Render</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Python Scripting</span>
+                        <span class="skill-tag">Automation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03. Where I've Worked</span>
+                <h2 class="section-title">Professional <span class="highlight">Experience</span></h2>
+            </div>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="timeline-role">Python Backend Engineering Intern</h3>
+                                <p class="timeline-company">IngrainSys Pvt Ltd <span class="timeline-type">| Virtual Internship</span></p>
+                            </div>
+                            <span class="timeline-date">Jun – Aug 2025</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed and deployed REST APIs; integrated SQL/NoSQL databases and automated data extraction, cleansing, and transformation pipelines using Python.</li>
+                            <li>Built scalable Python backend modules using pandas and data processing libraries; created SQL stored procedures and automation scripts to streamline repetitive data processing tasks across 3+ project features.</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>Python</span><span>REST API</span><span>SQL</span><span>NoSQL</span><span>pandas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="timeline-role">Marketing – Operations Domain</h3>
+                                <p class="timeline-company">Developer Students Club (DSC) <span class="timeline-type">| SRMIST Ramapuram</span></p>
+                            </div>
+                            <span class="timeline-date">Mar 2025 – Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Executed data-driven social media campaigns that grew community engagement by 40%; coordinated across design, PR, and recruitment teams, attracting 3x more applicants through strategic outreach.</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>Social Media</span><span>Data-Driven Strategy</span><span>Community Building</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="timeline-role">Technical Team Member – Web3</h3>
+                                <p class="timeline-company">CodeKrafters <span class="timeline-type">| SRMIST Ramapuram</span></p>
+                            </div>
+                            <span class="timeline-date">Oct 2023 – Jul 2024</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Led development of 'Soul Foundation', a help-mission website recognized for top-10 innovative concept by panel; organized 2+ networking events connecting 100+ participants with Web3 industry experts.</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>Web3</span><span>Web Development</span><span>Event Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04. What I've Built</span>
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card featured">
+                    <div class="project-card-inner">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Anjali19566" target="_blank" rel="noopener" aria-label="GitHub" class="project-link-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Transparent Anaemia Prediction System</h3>
+                        <p class="project-subtitle">Explainable & Counterfactual AI</p>
+                        <p class="project-description">
+                            Developed an anemia prediction system using SVM trained on hematological parameters; applied SHAP values and counterfactual analysis for model explainability and clinical risk interpretation. Built a Flask web application with real-time prediction, interactive data visualization, and confidence scoring.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Flask</span><span>scikit-learn</span><span>SHAP</span><span>Pandas</span><span>HTML/CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card featured">
+                    <div class="project-card-inner">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Anjali19566" target="_blank" rel="noopener" aria-label="GitHub" class="project-link-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">AI-Enabled Smart Disease Detection</h3>
+                        <p class="project-subtitle">Smart India Hackathon 2024 — Top 25/200+ Teams</p>
+                        <p class="project-description">
+                            Built a crop disease detection system using deep learning and image classification; generated prescriptive farming recommendations and validated model accuracy with EDA and hypothesis testing. Ranked Top 25 of 200+ teams at Smart India Hackathon 2024 at college level.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Computer Vision</span><span>Deep Learning</span><span>Scikit-Learn</span><span>React</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card featured">
+                    <div class="project-card-inner">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Anjali19566" target="_blank" rel="noopener" aria-label="GitHub" class="project-link-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">WhatsApp Chat Analyzer</h3>
+                        <p class="project-subtitle">End-to-End ML Project</p>
+                        <p class="project-description">
+                            Built an end-to-end Streamlit dashboard to parse and analyze 10,000+ WhatsApp messages; applied NLP-based feature engineering, statistical modeling, and hypothesis testing to surface communication patterns, media trends, and peak activity insights.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Streamlit</span><span>NLP</span><span>pandas</span><span>Matplotlib</span><span>Seaborn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05. My Education</span>
+                <h2 class="section-title">Academic <span class="highlight">Background</span></h2>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/><path d="M12 6v7l3-2 3 2V6"/></svg>
+                    </div>
+                    <div class="edu-content">
+                        <h3>B.Tech. CSE | Big Data Analytics</h3>
+                        <p class="edu-school">SRM Institute of Science and Technology, Ramapuram – Chennai, India</p>
+                        <div class="edu-meta">
+                            <span class="edu-date">2023 – 2027 (Expected)</span>
+                            <span class="edu-grade">CGPA: 9.744</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/></svg>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Class XII</h3>
+                        <p class="edu-school">Sri Chaitanya Techno School, Pallavaram</p>
+                        <div class="edu-meta">
+                            <span class="edu-date">2022 – 2023</span>
+                            <span class="edu-grade">81.8%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">06. Get In Touch</span>
+                <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+            </div>
+            <div class="contact-content">
+                <p class="contact-description">
+                    I'm currently looking for <strong>Data Science & Machine Learning internship</strong> opportunities. 
+                    Whether you have an opportunity, a question, or just want to say hi — my inbox is always open!
+                </p>
+                <div class="contact-grid">
+                    <a href="mailto:anjuu1903@gmail.com" class="contact-card" id="contact-email">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <h3>Email</h3>
+                        <p>anjuu1903@gmail.com</p>
+                    </a>
+                    <a href="tel:+919345933674" class="contact-card" id="contact-phone">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+91 93459 33674</p>
+                    </a>
+                    <a href="https://linkedin.com/in/sai-anjali-n-" target="_blank" rel="noopener" class="contact-card" id="contact-linkedin">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>sai-anjali-n-</p>
+                    </a>
+                    <a href="https://github.com/Anjali19566" target="_blank" rel="noopener" class="contact-card" id="contact-github">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>Anjali19566</p>
+                    </a>
+                </div>
+                <a href="mailto:anjuu1903@gmail.com" class="btn btn-primary btn-large" id="contact-cta">
+                    <span>Say Hello!</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-credit">Designed & Built by <strong>Neela Sai Anjali</strong></p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/sai-anjali-n-" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://github.com/Anjali19566" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                    </a>
+                    <a href="mailto:anjuu1903@gmail.com" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </a>
+                </div>
+                <p class="footer-year">&copy; 2025 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
